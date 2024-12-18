@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { ref, inject } from 'vue'
-// const useToast = inject('useToast');
-import { useToast } from 'primevue-wrapper/src/api/usetoast'
+const useToast = inject('useToast');
+// @ts-ignore
+// import { useToast } from 'primevue-wrapper/src/api/usetoast'
 const toast = useToast();
 
 defineProps<{ msg: string }>()
